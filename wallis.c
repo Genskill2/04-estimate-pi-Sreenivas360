@@ -21,7 +21,10 @@ int main(void) {
       printf("Estimate with even %d iterations is %f which is not accurate enough.\n", i, pi);
       abort();
     }
-  }
+  }float r=wallis_pi(5);
+    printf("PI =%f\n",r);
+    float b=wallis_pi(3000);
+    printf("PI =%f",b);
 }
 float wallis_pi(int n)
 {
