@@ -14,17 +14,15 @@ int main(void) {
       abort();
     }
   }
-
+printf("pi=%f\n",pi);
   for (int i=500; i<3000; i++) {
     pi = wallis_pi(i);
     if (!(fabs(pi - M_PI) < 0.01)) {
       printf("Estimate with even %d iterations is %f which is not accurate enough.\n", i, pi);
       abort();
     }
-  }float r=wallis_pi(5);
-    printf("PI =%f\n",r);
-    float b=wallis_pi(3000);
-    printf("PI =%f",b);
+  }
+  printf("pi=%f\n",pi);
 }
 float wallis_pi(int n)
 {
